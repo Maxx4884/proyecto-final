@@ -1,0 +1,180 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header y navegación */
+header {
+    background-color: #005f73;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #94d2bd;
+}
+
+/* Estilos para el main */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Recursos de Crisis */
+#recursos-crisis article {
+    margin-bottom: 15px;
+}
+
+#recursos-crisis ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Historias de Superación */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    clip-path: circle(50%);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #005f73;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Blog Educativo */
+#blog-educativo article {
+    background-color: #e9d8a6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Contacto */
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contacto aside {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+}
+
+/* Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Opacidad y Z-index */
+nav {
+    background-color: rgba(0, 95, 115, 0.9);
+    position: relative;
+    z-index: 100;
+}
+
+/* Botones */
+button {
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #94d2bd;
+}
+
+/* Estilos para entradas de formulario */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #0a9396;
+    outline: none;
+}
+
+/* Páginas de error (opcional) */
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
