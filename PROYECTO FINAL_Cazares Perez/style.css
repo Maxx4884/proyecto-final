@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Box model */
+header, nav, main, section, footer {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header y navegación */
+header {
+    background-color: #005f73;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Flexbox */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#recursos-crisis, #historias-superacion, #blog-educativo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contacto aside {
+    margin-top: 20px;
+}
+
+/* Grid */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: #005f73;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Shapes y clip */
+figure img {
+    clip-path: circle(50%);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    section {
+        width: 48%;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    section {
+        width: 32%;
+    }
+}
+
+/* Web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Opacity y Z-index */
+nav {
+    background-color: rgba(0, 95, 115, 0.9); /* Opacidad */
+    position: relative;
+    z-index: 100; /* Z-index */
+}
+
+/* Selectores */
+h1, h2, h3 {
+    color: #005f73;
+}
+
+a {
+    color: #0a9396;
+}
+
+a:hover {
+    color: #94d2bd;
+}
+
+button {
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #94d2bd;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Animaciones adicionales para darle dinamismo */
+button, input, textarea {
+    transition: background-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0a9396;
+    outline: none;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+}
+
+/* Final del código */
